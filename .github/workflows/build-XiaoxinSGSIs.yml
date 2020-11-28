@@ -128,8 +128,7 @@ jobs:
        - name: Upload patch
          run: |
            ./transfer wet SGSI-build-tool/10/patchoverlay Prepare_patch.zip
-           
-          
+                     
        - name: Upload SGSI to Artifact
          if: steps.var.outputs.upload_artifact == 'true'
          uses: actions/upload-artifact@v2
